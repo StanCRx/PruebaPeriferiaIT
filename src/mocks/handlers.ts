@@ -15,6 +15,8 @@ export const handlers = [
     const q = url.searchParams.get("q")?.toLowerCase() ?? "";
     const category = url.searchParams.get("category");
     const state = url.searchParams.get("state");
+    const page = Number(url.searchParams.get("page") ?? 1);
+    const size = Number(url.searchParams.get("size") ?? 10);
 
     let data = [...db];
 
@@ -22,7 +24,17 @@ export const handlers = [
     if (category) data = data.filter((p) => p.category === category);
     if (state !== null) data = data.filter((p) => String(p.state) === state);
 
-    return HttpResponse.json(data);
+    const total = data.length;
+
+    const start = (page - 1) * size;
+    const end = start + size;
+
+    const paginated = data.slice(start, end);
+
+    return HttpResponse.json({
+      data: paginated,
+      total,
+    });
   }),
 
   http.get("/api/products/:id", async ({ params }) => {
