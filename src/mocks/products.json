@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "code": "ACC0001",
+    "name": "Cuenta de Ahorro Digital",
+    "description": "Cuenta sin mantenimiento, apertura 100% digital.",
+    "price": 0.0,
+    "category": "Cuenta",
+    "reg_date": "2025-12-01T09:00:00Z",
+    "mod_date": "2026-01-10T10:30:00Z",
+    "state": true
+  },
+  {
+    "id": 2,
+    "code": "CCP0002",
+    "name": "Cuenta Corriente Premium",
+    "description": "Cuenta corriente con beneficios y sobregiro.",
+    "price": 0.0,
+    "category": "Cuenta",
+    "reg_date": "2025-12-02T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 3,
+    "code": "CRE0003",
+    "name": "Crédito Personal",
+    "description": "Financiamiento rápido con cuotas fijas.",
+    "price": 10000.0,
+    "category": "Crédito",
+    "reg_date": "2025-12-03T09:00:00Z",
+    "mod_date": "2026-01-05T14:15:00Z",
+    "state": true
+  },
+  {
+    "id": 4,
+    "code": "HIP0004",
+    "name": "Crédito Hipotecario",
+    "description": "Compra tu vivienda con tasas competitivas.",
+    "price": 150000.0,
+    "category": "Crédito",
+    "reg_date": "2025-12-04T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 5,
+    "code": "VEH0005",
+    "name": "Crédito Vehicular",
+    "description": "Financia tu auto nuevo o usado.",
+    "price": 25000.0,
+    "category": "Crédito",
+    "reg_date": "2025-12-05T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 6,
+    "code": "TCC0006",
+    "name": "Tarjeta de Crédito Clásica",
+    "description": "Tarifa preferencial y cuotas sin interés.",
+    "price": 0.0,
+    "category": "Tarjeta",
+    "reg_date": "2025-12-06T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 7,
+    "code": "TCO0007",
+    "name": "Tarjeta de Crédito Oro",
+    "description": "Programa de recompensas y seguros incluidos.",
+    "price": 0.0,
+    "category": "Tarjeta",
+    "reg_date": "2025-12-07T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 8,
+    "code": "TCP0008",
+    "name": "Tarjeta de Crédito Platinum",
+    "description": "Beneficios premium y sala VIP.",
+    "price": 0.0,
+    "category": "Tarjeta",
+    "reg_date": "2025-12-08T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 9,
+    "code": "ACS0009",
+    "name": "Cuenta Sueldo",
+    "description": "Afiliación de planilla con beneficios exclusivos.",
+    "price": 0.0,
+    "category": "Cuenta",
+    "reg_date": "2025-12-09T09:00:00Z",
+    "mod_date": null,
+    "state": true
+  },
+  {
+    "id": 10,
+    "code": "CEM0010",
+    "name": "Crédito Empresarial",
+    "description": "Línea para capital de trabajo y expansión.",
+    "price": 50000.0,
+    "category": "Crédito",
+    "reg_date": "2025-12-10T09:00:00Z",
+    "mod_date": "2026-01-15T11:00:00Z",
+    "state": true
+  }
+]
