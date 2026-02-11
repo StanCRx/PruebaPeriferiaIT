@@ -150,10 +150,14 @@ export const ProductAdd = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label className="text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="category"
+                  className="text-sm font-medium text-gray-700"
+                >
                   Categoría
                 </label>
                 <select
+                  id="category"
                   name="category"
                   value={form.category}
                   onChange={handleChange}
@@ -165,10 +169,14 @@ export const ProductAdd = () => {
                 </select>
               </div>
               <div className="flex flex-col">
-                <label className="text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="state"
+                  className="text-sm font-medium text-gray-700"
+                >
                   Estado
                 </label>
                 <select
+                  id="state"
                   name="state"
                   value={String(form.state)}
                   onChange={handleChange}
