@@ -33,6 +33,7 @@ export interface FiltersContextValue extends FiltersState {
   setPage: (v: number) => void;
   setCategory: (v?: Category) => void;
   setState: (v?: boolean) => void;
+  setSize: (v: number) => void;
   reset: () => void;
 }
 

@@ -71,15 +71,12 @@ export const ProductAdd = () => {
 
   return (
     <>
-      {/* Botón abrir modal */}
       <button
         onClick={() => setIsOpen(true)}
         className="bg-[#E60026] text-white px-4 py-2 rounded-lg hover:bg-[#FF0000] transition mb-4"
       >
         + Agregar Producto
       </button>
-
-      {/* Notificación */}
       {notification && (
         <div
           className={`fixed top-4 right-4 px-4 py-2 rounded-lg text-white shadow-lg transition ${
@@ -89,8 +86,6 @@ export const ProductAdd = () => {
           {notification.message}
         </div>
       )}
-
-      {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg relative">
@@ -99,7 +94,6 @@ export const ProductAdd = () => {
             </h2>
 
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-              {/* Código */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Código <span className="text-red-500">*</span>
@@ -114,8 +108,6 @@ export const ProductAdd = () => {
                   className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E60026]"
                 />
               </div>
-
-              {/* Nombre */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Nombre <span className="text-red-500">*</span>
@@ -130,8 +122,6 @@ export const ProductAdd = () => {
                   className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E60026]"
                 />
               </div>
-
-              {/* Descripción */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Descripción
@@ -144,8 +134,6 @@ export const ProductAdd = () => {
                   className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E60026]"
                 />
               </div>
-
-              {/* Precio */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Precio <span className="text-red-500">*</span>
@@ -161,8 +149,6 @@ export const ProductAdd = () => {
                   className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E60026]"
                 />
               </div>
-
-              {/* Categoría */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Categoría
@@ -178,8 +164,6 @@ export const ProductAdd = () => {
                   <option value="Tarjeta">Tarjeta</option>
                 </select>
               </div>
-
-              {/* Estado */}
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">
                   Estado
@@ -194,8 +178,6 @@ export const ProductAdd = () => {
                   <option value="false">Inactivo</option>
                 </select>
               </div>
-
-              {/* Botones */}
               <div className="flex justify-end gap-2 mt-2">
                 <button
                   type="button"

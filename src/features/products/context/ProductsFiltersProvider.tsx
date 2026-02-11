@@ -10,7 +10,7 @@ export const ProductsFiltersProvider = ({
 }) => {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const [size] = useState(5);
+  const [size, setSize] = useState(5);
   const [category, setCategory] = useState<Category | undefined>();
   const [state, setState] = useState<boolean | undefined>();
 
@@ -32,6 +32,7 @@ export const ProductsFiltersProvider = ({
       setPage,
       setCategory,
       setState,
+      setSize,
       reset,
     }),
     [search, page, size, category, state],

@@ -18,7 +18,6 @@ export const ProductsFiltersBar = () => {
 
   return (
     <div className="flex flex-wrap gap-3 mb-6 items-center bg-white p-5 rounded-2xl shadow-lg border border-gray-200">
-      {/* Input de búsqueda con icono */}
       <div className="relative flex-1">
         <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
           🔍
@@ -31,8 +30,6 @@ export const ProductsFiltersBar = () => {
                      focus:border-[#E60026] focus:ring-2 focus:ring-[#E60026]/50 focus:outline-none transition"
         />
       </div>
-
-      {/* Select de categoría */}
       <select
         value={category ?? ""}
         onChange={(e) => {
@@ -43,15 +40,13 @@ export const ProductsFiltersBar = () => {
         className="rounded-xl border border-gray-300 bg-gray-50 text-gray-900 px-4 py-2
                    focus:border-[#E60026] focus:ring-2 focus:ring-[#E60026]/50 focus:outline-none transition"
       >
-        <option value="">Todas</option>
+        <option value="">Todos</option>
         {CATEGORY_OPTIONS.map((c) => (
           <option key={c} value={c}>
             {c}
           </option>
         ))}
       </select>
-
-      {/* Select de estado */}
       <select
         value={state === undefined ? "" : String(state)}
         onChange={(e) => {

@@ -34,7 +34,6 @@ export const ProductCard = memo(({ product }: { product: Product }) => {
 
   return (
     <>
-      {/* Notificación */}
       {notification && (
         <div
           className={`fixed top-4 right-4 px-4 py-2 rounded-lg text-white shadow-lg transition ${
@@ -46,9 +45,12 @@ export const ProductCard = memo(({ product }: { product: Product }) => {
       )}
 
       <li className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-600 p-6 border border-gray-200 flex flex-col gap-3 border-l-8 border-l-[#FF9399]">
-        {/* Header */}
         <div className="flex justify-between items-center">
-          <h3 className="text-lg font-bold text-[#E60026]">{product.name}</h3>
+          <div>
+            <h3 className="text-lg font-bold text-[#E60026]">{product.name}</h3>
+            <p className="text-sm text-gray-500">Código: {product.code}</p>
+          </div>
+
           <span
             className={`text-xs font-semibold px-2 py-1 rounded-full ${
               product.state
@@ -59,12 +61,8 @@ export const ProductCard = memo(({ product }: { product: Product }) => {
             {product.state ? "Activo" : "Inactivo"}
           </span>
         </div>
-
-        {/* Categoría y descripción */}
         <p className="text-sm text-gray-600 font-medium">{product.category}</p>
         <p className="text-gray-700 line-clamp-2">{product.description}</p>
-
-        {/* Footer: precio + fecha + botones */}
         <div className="mt-4 flex justify-between items-center flex-wrap gap-2">
           <div className="flex flex-col">
             <span className="text-[#E60026] font-semibold text-sm">
@@ -76,12 +74,10 @@ export const ProductCard = memo(({ product }: { product: Product }) => {
           </div>
 
           <div className="flex gap-2">
-            {/* Botón Editar */}
             <ProductEdit product={product} />
-
-            {/* Botón Eliminar */}
             <button
               onClick={handleDelete}
+              aria-label={`Eliminar ${product.name}`}
               className="flex items-center gap-1 bg-gray-200 text-gray-700 px-3 py-1 rounded-lg text-sm hover:bg-red-100 hover:text-red-700 transition hover:cursor-pointer"
             >
               <FaTrash className="text-xs" />
