@@ -106,4 +106,4 @@ Para ejecutar todas las pruebas unitarias:
 
 npx jest
 
-Tiempo invertido: 7 Horas
+Tiempo invertido: 6 Horas
